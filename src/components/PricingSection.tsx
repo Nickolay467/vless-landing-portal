@@ -1,0 +1,150 @@
+
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+
+const PricingSection = () => {
+  const [isAnnual, setIsAnnual] = useState(true);
+  
+  const plans = [
+    {
+      name: "Basic",
+      monthlyPrice: 4.99,
+      annualPrice: 3.99,
+      features: [
+        "1 Connection",
+        "15 Server locations",
+        "Up to 100 Mbps",
+        "Basic encryption",
+        "No-logs policy",
+        "Email support"
+      ],
+      cta: "Get Started",
+      popular: false
+    },
+    {
+      name: "Premium",
+      monthlyPrice: 9.99,
+      annualPrice: 7.99,
+      features: [
+        "5 Connections",
+        "30+ Server locations",
+        "Up to 500 Mbps",
+        "Military-grade encryption",
+        "No-logs policy",
+        "Priority support",
+        "Ad blocker included",
+        "Streaming optimized"
+      ],
+      cta: "Get Premium",
+      popular: true
+    },
+    {
+      name: "Enterprise",
+      monthlyPrice: 19.99,
+      annualPrice: 15.99,
+      features: [
+        "Unlimited Connections",
+        "50+ Server locations",
+        "Up to 10 Gbps",
+        "Military-grade encryption",
+        "No-logs policy",
+        "24/7 dedicated support",
+        "Ad blocker included",
+        "Streaming optimized",
+        "Dedicated IP address",
+        "Team management console"
+      ],
+      cta: "Contact Sales",
+      popular: false
+    }
+  ];
+
+  return (
+    <section id="pricing" className="py-20 bg-security-gradient">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Simple <span className="text-gradient">Pricing</span>, Complete Protection
+          </h2>
+          <p className="text-gray-300 max-w-3xl mx-auto mb-8">
+            Choose the perfect plan for your needs. All plans come with our 30-day money-back guarantee.
+          </p>
+          
+          <div className="flex items-center justify-center mb-8">
+            <div className="bg-vless-blue/30 p-1 rounded-full inline-flex">
+              <button
+                onClick={() => setIsAnnual(false)}
+                className={`px-4 py-2 rounded-full text-sm ${
+                  !isAnnual ? 'bg-vless-purple text-white' : 'text-gray-300'
+                }`}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setIsAnnual(true)}
+                className={`px-4 py-2 rounded-full text-sm ${
+                  isAnnual ? 'bg-vless-purple text-white' : 'text-gray-300'
+                }`}
+              >
+                Yearly <span className="text-xs opacity-75">Save 20%</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {plans.map((plan, index) => (
+            <div 
+              key={index}
+              className={`rounded-xl overflow-hidden ${
+                plan.popular 
+                  ? 'bg-gradient-to-b from-vless-blue to-vless-dark border border-vless-purple/50 transform -translate-y-4 scale-105 z-10 shadow-xl shadow-vless-purple/20' 
+                  : 'bg-vless-blue/50 border border-white/5'
+              }`}
+            >
+              {plan.popular && (
+                <div className="bg-vless-purple text-center py-1 text-xs font-medium">
+                  MOST POPULAR
+                </div>
+              )}
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold">
+                    ${isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                  </span>
+                  <span className="text-gray-400">/month</span>
+                </div>
+                <p className="text-gray-400 mb-6">
+                  {isAnnual ? 'Billed annually' : 'Billed monthly'}
+                </p>
+                
+                <Button 
+                  className={`w-full mb-6 ${
+                    plan.popular 
+                      ? 'bg-gradient-primary button-glow hover:opacity-90' 
+                      : 'bg-white/10 hover:bg-white/20'
+                  }`}
+                >
+                  {plan.cta}
+                </Button>
+                
+                <ul className="space-y-3">
+                  {plan.features.map((feature, i) => (
+                    <li key={i} className="flex items-start">
+                      <Check className="h-5 w-5 text-vless-cyan mr-2 flex-shrink-0" />
+                      <span className="text-gray-300">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PricingSection;
