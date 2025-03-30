@@ -58,7 +58,7 @@ export default {
 					purple: '#7B61FF',
 					cyan: '#00FFD1',
 					pink: '#FF61DC',
-					dark: '#080D21',
+					dark: '#050710', // Darker background
 					light: '#F9FAFB',
 					yellow: '#FACC15'
 				}
@@ -104,13 +104,13 @@ export default {
 				'lightning-flash': 'lightning-flash 1.5s ease-in-out infinite',
 			},
 			backgroundImage: {
-				'hero-pattern': 'linear-gradient(to bottom right, rgba(10, 17, 40, 0.8), rgba(7, 11, 33, 0.9)), url("/network-bg.svg")',
+				'hero-pattern': 'linear-gradient(to bottom right, rgba(5, 7, 16, 0.8), rgba(3, 5, 15, 0.9)), url("/network-bg.svg")',
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-primary': 'linear-gradient(90deg, #FACC15 0%, #FEF08A 100%)',
 				'gradient-yellow': 'linear-gradient(90deg, #FACC15 0%, #FEF08A 100%)',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'security-gradient': 'linear-gradient(180deg, rgba(250, 204, 21, 0.15) 0%, rgba(254, 240, 138, 0.15) 100%)',
-				'security-gradient-yellow': 'linear-gradient(180deg, rgba(250, 204, 21, 0.15) 0%, rgba(254, 240, 138, 0.15) 100%)',
+				'security-gradient': 'linear-gradient(180deg, rgba(250, 204, 21, 0.05) 0%, rgba(254, 240, 138, 0.05) 100%)',
+				'security-gradient-yellow': 'linear-gradient(180deg, rgba(250, 204, 21, 0.05) 0%, rgba(254, 240, 138, 0.05) 100%)',
 			}
 		}
 	},

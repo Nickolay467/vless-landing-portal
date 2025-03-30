@@ -61,7 +61,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-security-gradient">
+    <section id="pricing" className="py-20 bg-gradient-to-b from-transparent to-black/40">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -72,7 +72,7 @@ const PricingSection = () => {
           </p>
           
           <div className="flex items-center justify-center mb-8">
-            <div className="bg-black/30 p-1 rounded-full inline-flex">
+            <div className="bg-black/50 p-1 rounded-full inline-flex">
               <button
                 onClick={() => setIsAnnual(false)}
                 className={`px-4 py-2 rounded-full text-sm ${
@@ -99,8 +99,8 @@ const PricingSection = () => {
               key={index}
               className={`rounded-xl overflow-hidden ${
                 plan.popular 
-                  ? 'bg-gradient-to-b from-black/50 to-vless-dark border border-yellow-400/50 transform -translate-y-4 scale-105 z-10 shadow-xl shadow-yellow-400/20' 
-                  : 'bg-black/50 border border-white/5'
+                  ? 'bg-gradient-to-b from-black/80 to-black/50 border border-yellow-400/50 transform -translate-y-4 scale-105 z-10 shadow-xl shadow-yellow-400/20' 
+                  : 'bg-black/70 border border-white/5'
               }`}
             >
               {plan.popular && (
