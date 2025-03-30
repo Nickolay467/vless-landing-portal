@@ -1,7 +1,8 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Zap, Globe } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import { LightningBoltIcon } from "@/components/icons/LightningBoltIcon";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +12,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="#" className="flex items-center space-x-2">
-              <Zap className="h-6 w-6 text-yellow-400" />
+            <a href="#" className="flex items-center space-x-2 group">
+              <div className="relative">
+                <div className="absolute -inset-1 bg-yellow-400/30 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <LightningBoltIcon className="h-6 w-6 text-yellow-400 animate-lightning-flash relative z-10" />
+              </div>
               <span className="text-xl font-bold text-white">HurikyNetwork</span>
             </a>
           </div>
@@ -27,7 +31,7 @@ const Navbar = () => {
           </nav>
           
           <div className="hidden md:block">
-            <Button className="bg-gradient-primary hover:opacity-90 transition-opacity">
+            <Button className="bg-gradient-yellow text-vless-dark font-medium hover:opacity-90 transition-opacity">
               Начать
             </Button>
           </div>
@@ -52,7 +56,7 @@ const Navbar = () => {
             <a href="#faq" className="block px-3 py-2 text-gray-300 hover:text-white">FAQ</a>
             <a href="#about" className="block px-3 py-2 text-gray-300 hover:text-white">О нас</a>
             <div className="px-3 py-2">
-              <Button className="w-full bg-gradient-primary hover:opacity-90 transition-opacity">
+              <Button className="w-full bg-gradient-yellow text-vless-dark font-medium hover:opacity-90 transition-opacity">
                 Начать
               </Button>
             </div>

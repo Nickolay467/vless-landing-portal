@@ -59,7 +59,8 @@ export default {
 					cyan: '#00FFD1',
 					pink: '#FF61DC',
 					dark: '#080D21',
-					light: '#F9FAFB'
+					light: '#F9FAFB',
+					yellow: '#FACC15'
 				}
 			},
 			borderRadius: {
@@ -88,6 +89,10 @@ export default {
 					'0%': { backgroundPosition: '0% 50%' },
 					'50%': { backgroundPosition: '100% 50%' },
 					'100%': { backgroundPosition: '0% 50%' },
+				},
+				'lightning-flash': {
+					'0%, 100%': { filter: 'brightness(1)' },
+					'50%': { filter: 'brightness(1.5)' },
 				}
 			},
 			animation: {
@@ -96,13 +101,16 @@ export default {
 				'floating': 'floating 3s ease-in-out infinite',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
 				'gradient-rotate': 'gradient-rotate 3s ease infinite',
+				'lightning-flash': 'lightning-flash 1.5s ease-in-out infinite',
 			},
 			backgroundImage: {
 				'hero-pattern': 'linear-gradient(to bottom right, rgba(10, 17, 40, 0.8), rgba(7, 11, 33, 0.9)), url("/network-bg.svg")',
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-primary': 'linear-gradient(90deg, #7B61FF 0%, #00FFD1 100%)',
+				'gradient-yellow': 'linear-gradient(90deg, #FACC15 0%, #FEF08A 100%)',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'security-gradient': 'linear-gradient(180deg, rgba(123, 97, 255, 0.15) 0%, rgba(0, 255, 209, 0.15) 100%)',
+				'security-gradient-yellow': 'linear-gradient(180deg, rgba(250, 204, 21, 0.15) 0%, rgba(254, 240, 138, 0.15) 100%)',
 			}
 		}
 	},
