@@ -14,7 +14,7 @@
     --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 262 100% 69%;
+    --primary: 48 96% 53%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 217 33% 18%;
@@ -23,7 +23,7 @@
     --muted: 217 33% 18%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 169 100% 50%;
+    --accent: 48 96% 53%;
     --accent-foreground: 222 47% 11%;
 
     --destructive: 0 63% 31%;
@@ -31,7 +31,7 @@
 
     --border: 217 33% 20%;
     --input: 217 33% 18%;
-    --ring: 262 100% 69%;
+    --ring: 48 96% 53%;
 
     --radius: 0.75rem;
   }
@@ -52,7 +52,7 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-primary bg-clip-text text-transparent;
+    @apply bg-gradient-yellow bg-clip-text text-transparent;
   }
   
   .text-gradient-yellow {
@@ -60,11 +60,11 @@
   }
   
   .gradient-border {
-    @apply relative border-0 before:absolute before:-inset-[1px] before:rounded-xl before:bg-gradient-primary before:-z-10;
+    @apply relative border-0 before:absolute before:-inset-[1px] before:rounded-xl before:bg-gradient-yellow before:-z-10;
   }
   
   .button-glow {
-    box-shadow: 0 0 20px 5px rgba(123, 97, 255, 0.3);
+    box-shadow: 0 0 20px 5px rgba(250, 204, 21, 0.3);
   }
   
   .button-glow-yellow {
@@ -72,7 +72,7 @@
   }
   
   .network-lines {
-    background-image: radial-gradient(rgba(123, 97, 255, 0.4) 1px, transparent 0);
+    background-image: radial-gradient(rgba(250, 204, 21, 0.4) 1px, transparent 0);
     background-size: 30px 30px;
     background-position: -15px -15px;
   }

@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center rounded-full bg-vless-purple/10 px-3 py-1 text-sm text-vless-purple mb-6">
+            <div className="inline-flex items-center rounded-full bg-yellow-400/10 px-3 py-1 text-sm text-yellow-400 mb-6">
               <Lock className="mr-1 h-3 w-3" /> Военный уровень шифрования
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -18,7 +18,7 @@ const HeroSection = () => {
               Получите неограниченный, зашифрованный доступ к интернету с нашим высокоскоростным HurikyNetwork VPN. Защитите вашу онлайн-личность и путешествуйте по сети с уверенностью.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-primary button-glow hover:opacity-90 transition-opacity">
+              <Button size="lg" className="bg-gradient-yellow button-glow-yellow hover:opacity-90 transition-opacity">
                 Начать <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button variant="outline" size="lg" className="border-white/20 hover:bg-white/5">
@@ -37,11 +37,11 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-radial from-vless-purple/20 to-transparent rounded-full blur-3xl"></div>
+            <div className="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-3xl"></div>
             <div className="relative animate-floating">
               <div className="glass-card rounded-2xl p-6 relative z-10">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-vless-cyan/10 rounded-full blur-3xl -z-10"></div>
-                <div className="absolute bottom-0 left-0 w-40 h-40 bg-vless-purple/10 rounded-full blur-3xl -z-10"></div>
+                <div className="absolute top-0 right-0 w-40 h-40 bg-yellow-400/10 rounded-full blur-3xl -z-10"></div>
+                <div className="absolute bottom-0 left-0 w-40 h-40 bg-yellow-400/10 rounded-full blur-3xl -z-10"></div>
                 <div className="flex justify-between items-center mb-6">
                   <div className="flex items-center">
                     <Zap className="h-8 w-8 text-yellow-400 mr-2" />
@@ -67,7 +67,7 @@ const HeroSection = () => {
                   </div>
                 </div>
                 <div className="relative h-2 bg-white/10 rounded-full mb-6 overflow-hidden">
-                  <div className="absolute h-full w-3/4 bg-gradient-to-r from-vless-purple to-vless-cyan animate-pulse"></div>
+                  <div className="absolute h-full w-3/4 bg-gradient-to-r from-yellow-400 to-yellow-200 animate-pulse"></div>
                 </div>
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="bg-white/5 p-3 rounded-lg">
@@ -75,11 +75,11 @@ const HeroSection = () => {
                     <span className="text-xs">10 Гбит/с</span>
                   </div>
                   <div className="bg-white/5 p-3 rounded-lg">
-                    <Globe className="h-5 w-5 text-vless-pink mx-auto mb-1" />
+                    <Globe className="h-5 w-5 text-yellow-400 mx-auto mb-1" />
                     <span className="text-xs">30+ Локаций</span>
                   </div>
                   <div className="bg-white/5 p-3 rounded-lg">
-                    <Lock className="h-5 w-5 text-vless-purple mx-auto mb-1" />
+                    <Lock className="h-5 w-5 text-yellow-400 mx-auto mb-1" />
                     <span className="text-xs">Без логов</span>
                   </div>
                 </div>

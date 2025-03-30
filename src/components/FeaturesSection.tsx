@@ -3,7 +3,7 @@ import { Shield, Zap, Globe, Lock, Server, Smartphone, Wifi, Clock } from "lucid
 
 const features = [
   {
-    icon: <Shield className="h-6 w-6 text-vless-purple" />,
+    icon: <Shield className="h-6 w-6 text-yellow-400" />,
     title: "Военный уровень шифрования",
     description: "Защитите ваши данные с шифрованием AES-256, тем же стандартом, который используют эксперты по безопасности во всем мире."
   },
@@ -13,32 +13,32 @@ const features = [
     description: "Наслаждайтесь сверхбыстрыми соединениями с нашим оптимизированным протоколом и серверной сетью 10 Гбит/с."
   },
   {
-    icon: <Globe className="h-6 w-6 text-vless-pink" />,
+    icon: <Globe className="h-6 w-6 text-yellow-400" />,
     title: "Глобальная сеть серверов",
     description: "Получите доступ к контенту из любой точки мира благодаря серверам в более чем 30 странах."
   },
   {
-    icon: <Lock className="h-6 w-6 text-vless-purple" />,
+    icon: <Lock className="h-6 w-6 text-yellow-400" />,
     title: "Политика отсутствия логов",
     description: "Мы никогда не отслеживаем, не собираем и не передаем ваши данные о просмотрах. Ваша конфиденциальность гарантирована."
   },
   {
-    icon: <Server className="h-6 w-6 text-vless-cyan" />,
+    icon: <Server className="h-6 w-6 text-yellow-400" />,
     title: "Выделенные серверы",
     description: "Получите персональные выделенные IP-адреса с частными серверами для повышенной безопасности."
   },
   {
-    icon: <Smartphone className="h-6 w-6 text-vless-pink" />,
+    icon: <Smartphone className="h-6 w-6 text-yellow-400" />,
     title: "Поддержка всех устройств",
     description: "Подключайте все свои устройства одновременно с поддержкой Windows, Mac, iOS, Android и Linux."
   },
   {
-    icon: <Wifi className="h-6 w-6 text-vless-purple" />,
+    icon: <Wifi className="h-6 w-6 text-yellow-400" />,
     title: "Обход ограничений провайдера",
     description: "Обходите ограничения интернет-провайдера для стабильной скорости потоковой передачи и загрузки."
   },
   {
-    icon: <Clock className="h-6 w-6 text-vless-cyan" />,
+    icon: <Clock className="h-6 w-6 text-yellow-400" />,
     title: "Поддержка 24/7",
     description: "Получайте помощь в любое время благодаря нашей круглосуточной службе поддержки клиентов."
   }
@@ -62,9 +62,9 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-vless-blue/50 rounded-xl p-6 border border-white/5 hover:border-vless-purple/50 transition-all duration-300"
+              className="bg-black/40 rounded-xl p-6 border border-white/5 hover:border-yellow-400/50 transition-all duration-300"
             >
-              <div className="rounded-full bg-vless-purple/10 w-12 h-12 flex items-center justify-center mb-4">
+              <div className="rounded-full bg-yellow-400/10 w-12 h-12 flex items-center justify-center mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-bold mb-2">{feature.title}</h3>

@@ -106,10 +106,10 @@ export default {
 			backgroundImage: {
 				'hero-pattern': 'linear-gradient(to bottom right, rgba(10, 17, 40, 0.8), rgba(7, 11, 33, 0.9)), url("/network-bg.svg")',
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-primary': 'linear-gradient(90deg, #7B61FF 0%, #00FFD1 100%)',
+				'gradient-primary': 'linear-gradient(90deg, #FACC15 0%, #FEF08A 100%)',
 				'gradient-yellow': 'linear-gradient(90deg, #FACC15 0%, #FEF08A 100%)',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'security-gradient': 'linear-gradient(180deg, rgba(123, 97, 255, 0.15) 0%, rgba(0, 255, 209, 0.15) 100%)',
+				'security-gradient': 'linear-gradient(180deg, rgba(250, 204, 21, 0.15) 0%, rgba(254, 240, 138, 0.15) 100%)',
 				'security-gradient-yellow': 'linear-gradient(180deg, rgba(250, 204, 21, 0.15) 0%, rgba(254, 240, 138, 0.15) 100%)',
 			}
 		}

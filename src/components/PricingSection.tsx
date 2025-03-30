@@ -72,11 +72,11 @@ const PricingSection = () => {
           </p>
           
           <div className="flex items-center justify-center mb-8">
-            <div className="bg-vless-blue/30 p-1 rounded-full inline-flex">
+            <div className="bg-black/30 p-1 rounded-full inline-flex">
               <button
                 onClick={() => setIsAnnual(false)}
                 className={`px-4 py-2 rounded-full text-sm ${
-                  !isAnnual ? 'bg-vless-purple text-white' : 'text-gray-300'
+                  !isAnnual ? 'bg-yellow-400 text-black' : 'text-gray-300'
                 }`}
               >
                 Помесячно
@@ -84,7 +84,7 @@ const PricingSection = () => {
               <button
                 onClick={() => setIsAnnual(true)}
                 className={`px-4 py-2 rounded-full text-sm ${
-                  isAnnual ? 'bg-vless-purple text-white' : 'text-gray-300'
+                  isAnnual ? 'bg-yellow-400 text-black' : 'text-gray-300'
                 }`}
               >
                 Годовой <span className="text-xs opacity-75">Скидка 20%</span>
@@ -99,12 +99,12 @@ const PricingSection = () => {
               key={index}
               className={`rounded-xl overflow-hidden ${
                 plan.popular 
-                  ? 'bg-gradient-to-b from-vless-blue to-vless-dark border border-vless-purple/50 transform -translate-y-4 scale-105 z-10 shadow-xl shadow-vless-purple/20' 
-                  : 'bg-vless-blue/50 border border-white/5'
+                  ? 'bg-gradient-to-b from-black/50 to-vless-dark border border-yellow-400/50 transform -translate-y-4 scale-105 z-10 shadow-xl shadow-yellow-400/20' 
+                  : 'bg-black/50 border border-white/5'
               }`}
             >
               {plan.popular && (
-                <div className="bg-vless-purple text-center py-1 text-xs font-medium">
+                <div className="bg-yellow-400 text-center py-1 text-xs font-medium text-black">
                   САМЫЙ ПОПУЛЯРНЫЙ
                 </div>
               )}
@@ -123,7 +123,7 @@ const PricingSection = () => {
                 <Button 
                   className={`w-full mb-6 ${
                     plan.popular 
-                      ? 'bg-gradient-primary button-glow hover:opacity-90' 
+                      ? 'bg-gradient-yellow text-black button-glow-yellow hover:opacity-90' 
                       : 'bg-white/10 hover:bg-white/20'
                   }`}
                 >
@@ -133,7 +133,7 @@ const PricingSection = () => {
                 <ul className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <Check className="h-5 w-5 text-vless-cyan mr-2 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-yellow-400 mr-2 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}

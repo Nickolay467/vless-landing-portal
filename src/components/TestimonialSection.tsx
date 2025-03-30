@@ -56,9 +56,9 @@ const TestimonialSection = () => {
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="h-full bg-vless-blue/50 rounded-xl p-6 border border-white/5">
+                <div className="h-full bg-black/40 rounded-xl p-6 border border-white/5">
                   <div className="flex items-start mb-4">
-                    <div className="w-10 h-10 rounded-full bg-vless-purple/20 overflow-hidden mr-3">
+                    <div className="w-10 h-10 rounded-full bg-yellow-400/20 overflow-hidden mr-3">
                       <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
@@ -78,8 +78,8 @@ const TestimonialSection = () => {
             ))}
           </CarouselContent>
           <div className="flex justify-center mt-6 gap-2">
-            <CarouselPrevious className="relative inset-0 translate-x-0 translate-y-0" />
-            <CarouselNext className="relative inset-0 translate-x-0 translate-y-0" />
+            <CarouselPrevious className="relative inset-0 translate-x-0 translate-y-0 bg-yellow-400/10 text-yellow-400 border-yellow-400/20 hover:bg-yellow-400/20" />
+            <CarouselNext className="relative inset-0 translate-x-0 translate-y-0 bg-yellow-400/10 text-yellow-400 border-yellow-400/20 hover:bg-yellow-400/20" />
           </div>
         </Carousel>
       </div>
