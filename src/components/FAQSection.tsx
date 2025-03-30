@@ -3,36 +3,36 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "What is VLESS VPN and how does it work?",
-    answer: "VLESS VPN is a modern VPN protocol that provides secure, encrypted connections between your device and our servers. It works by routing your internet traffic through encrypted tunnels, hiding your IP address and protecting your data from prying eyes."
+    question: "Что такое HurikyNetwork VPN и как он работает?",
+    answer: "HurikyNetwork VPN - это современный VPN протокол, который обеспечивает безопасные, зашифрованные соединения между вашим устройством и нашими серверами. Он работает путем маршрутизации вашего интернет-трафика через зашифрованные туннели, скрывая ваш IP-адрес и защищая ваши данные от посторонних глаз."
   },
   {
-    question: "How is VLESS different from other VPN protocols?",
-    answer: "VLESS is designed to be faster and more efficient than traditional VPN protocols. It uses modern encryption techniques while reducing overhead, resulting in better speeds and reliability, especially on networks with restrictions."
+    question: "Чем HurikyNetwork отличается от других VPN протоколов?",
+    answer: "HurikyNetwork разработан, чтобы быть быстрее и эффективнее, чем традиционные VPN протоколы. Он использует современные методы шифрования при уменьшении накладных расходов, что приводит к лучшей скорости и надежности, особенно в сетях с ограничениями."
   },
   {
-    question: "Can I use VLESS VPN on multiple devices?",
-    answer: "Yes, depending on your plan. Our Basic plan supports 1 connection, Premium supports 5 simultaneous connections, and Enterprise offers unlimited connections. All plans work across Windows, Mac, iOS, Android, and Linux."
+    question: "Могу ли я использовать HurikyNetwork VPN на нескольких устройствах?",
+    answer: "Да, в зависимости от вашего тарифа. Наш Базовый тариф поддерживает 1 подключение, Премиум - 5 одновременных подключений, а Корпоративный - неограниченное количество подключений. Все тарифы работают на Windows, Mac, iOS, Android и Linux."
   },
   {
-    question: "Will VLESS VPN slow down my internet connection?",
-    answer: "All VPNs can potentially reduce internet speed due to encryption overhead. However, VLESS is designed to minimize this impact. Most users notice minimal speed reduction, and some even experience improved speeds if their ISP is throttling certain services."
+    question: "Замедлит ли HurikyNetwork VPN мое интернет-соединение?",
+    answer: "Все VPN потенциально могут снизить скорость интернета из-за накладных расходов на шифрование. Однако HurikyNetwork разработан для минимизации этого воздействия. Большинство пользователей замечают минимальное снижение скорости, а некоторые даже испытывают улучшение скорости, если их интернет-провайдер ограничивает определенные сервисы."
   },
   {
-    question: "Do you keep logs of my online activity?",
-    answer: "No. We maintain a strict no-logs policy. We don't track, collect, or share any of your browsing activities, connection logs, or IP addresses. Your privacy is our priority."
+    question: "Вы храните логи моей онлайн-активности?",
+    answer: "Нет. Мы придерживаемся строгой политики отсутствия логов. Мы не отслеживаем, не собираем и не передаем данные о ваших действиях в интернете, журналы подключений или IP-адреса. Ваша конфиденциальность - наш приоритет."
   },
   {
-    question: "Can I stream content with VLESS VPN?",
-    answer: "Absolutely! Our Premium and Enterprise plans are optimized for streaming services. You can access content from Netflix, Hulu, Disney+, and other platforms from anywhere in the world with high-definition quality."
+    question: "Могу ли я использовать стриминговые сервисы с HurikyNetwork VPN?",
+    answer: "Абсолютно! Наши тарифы Премиум и Корпоративный оптимизированы для стриминговых сервисов. Вы можете получить доступ к контенту с Netflix, Hulu, Disney+ и других платформ из любой точки мира с высоким качеством."
   },
   {
-    question: "Is there a money-back guarantee?",
-    answer: "Yes, we offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our service for any reason, you can request a full refund within the first 30 days of your subscription."
+    question: "Есть ли гарантия возврата денег?",
+    answer: "Да, мы предлагаем 30-дневную гарантию возврата денег на все наши тарифы. Если вы не удовлетворены нашим сервисом по какой-либо причине, вы можете запросить полный возврат средств в течение первых 30 дней вашей подписки."
   },
   {
-    question: "How do I set up VLESS VPN on my device?",
-    answer: "Setting up VLESS VPN is easy. After purchasing a plan, you'll receive download links and detailed setup instructions. Our apps feature one-click connections, and our support team is available to help if you need assistance."
+    question: "Как настроить HurikyNetwork VPN на моем устройстве?",
+    answer: "Настройка HurikyNetwork VPN очень проста. После покупки тарифа вы получите ссылки для скачивания и подробные инструкции по установке. Наши приложения имеют функцию подключения в один клик, а наша команда поддержки всегда готова помочь, если вам понадобится помощь."
   }
 ];
 
@@ -42,10 +42,10 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Frequently Asked <span className="text-gradient">Questions</span>
+            Часто задаваемые <span className="text-gradient">вопросы</span>
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            Find answers to common questions about our VLESS VPN service.
+            Найдите ответы на распространенные вопросы о нашем VPN сервисе HurikyNetwork.
           </p>
         </div>
         

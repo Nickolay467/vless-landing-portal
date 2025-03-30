@@ -8,54 +8,54 @@ const PricingSection = () => {
   
   const plans = [
     {
-      name: "Basic",
-      monthlyPrice: 4.99,
-      annualPrice: 3.99,
+      name: "Базовый",
+      monthlyPrice: 299,
+      annualPrice: 199,
       features: [
-        "1 Connection",
-        "15 Server locations",
-        "Up to 100 Mbps",
-        "Basic encryption",
-        "No-logs policy",
-        "Email support"
+        "1 Подключение",
+        "15 Локаций серверов",
+        "До 100 Мбит/с",
+        "Базовое шифрование",
+        "Политика отсутствия логов",
+        "Email поддержка"
       ],
-      cta: "Get Started",
+      cta: "Начать",
       popular: false
     },
     {
-      name: "Premium",
-      monthlyPrice: 9.99,
-      annualPrice: 7.99,
+      name: "Премиум",
+      monthlyPrice: 599,
+      annualPrice: 399,
       features: [
-        "5 Connections",
-        "30+ Server locations",
-        "Up to 500 Mbps",
-        "Military-grade encryption",
-        "No-logs policy",
-        "Priority support",
-        "Ad blocker included",
-        "Streaming optimized"
+        "5 Подключений",
+        "30+ Локаций серверов",
+        "До 500 Мбит/с",
+        "Военный уровень шифрования",
+        "Политика отсутствия логов",
+        "Приоритетная поддержка",
+        "Блокировщик рекламы",
+        "Оптимизация для стриминга"
       ],
-      cta: "Get Premium",
+      cta: "Выбрать Премиум",
       popular: true
     },
     {
-      name: "Enterprise",
-      monthlyPrice: 19.99,
-      annualPrice: 15.99,
+      name: "Корпоративный",
+      monthlyPrice: 1299,
+      annualPrice: 999,
       features: [
-        "Unlimited Connections",
-        "50+ Server locations",
-        "Up to 10 Gbps",
-        "Military-grade encryption",
-        "No-logs policy",
-        "24/7 dedicated support",
-        "Ad blocker included",
-        "Streaming optimized",
-        "Dedicated IP address",
-        "Team management console"
+        "Безлимитные подключения",
+        "50+ Локаций серверов",
+        "До 10 Гбит/с",
+        "Военный уровень шифрования",
+        "Политика отсутствия логов",
+        "Выделенная поддержка 24/7",
+        "Блокировщик рекламы",
+        "Оптимизация для стриминга",
+        "Выделенный IP адрес",
+        "Панель управления командой"
       ],
-      cta: "Contact Sales",
+      cta: "Связаться с отделом продаж",
       popular: false
     }
   ];
@@ -65,10 +65,10 @@ const PricingSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Simple <span className="text-gradient">Pricing</span>, Complete Protection
+            Простые <span className="text-gradient">тарифы</span>, полная защита
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto mb-8">
-            Choose the perfect plan for your needs. All plans come with our 30-day money-back guarantee.
+            Выберите идеальный план для ваших нужд. Все тарифы включают гарантию возврата денег в течение 30 дней.
           </p>
           
           <div className="flex items-center justify-center mb-8">
@@ -79,7 +79,7 @@ const PricingSection = () => {
                   !isAnnual ? 'bg-vless-purple text-white' : 'text-gray-300'
                 }`}
               >
-                Monthly
+                Помесячно
               </button>
               <button
                 onClick={() => setIsAnnual(true)}
@@ -87,7 +87,7 @@ const PricingSection = () => {
                   isAnnual ? 'bg-vless-purple text-white' : 'text-gray-300'
                 }`}
               >
-                Yearly <span className="text-xs opacity-75">Save 20%</span>
+                Годовой <span className="text-xs opacity-75">Скидка 20%</span>
               </button>
             </div>
           </div>
@@ -105,19 +105,19 @@ const PricingSection = () => {
             >
               {plan.popular && (
                 <div className="bg-vless-purple text-center py-1 text-xs font-medium">
-                  MOST POPULAR
+                  САМЫЙ ПОПУЛЯРНЫЙ
                 </div>
               )}
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <div className="mb-4">
                   <span className="text-4xl font-bold">
-                    ${isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                    {isAnnual ? plan.annualPrice : plan.monthlyPrice}₽
                   </span>
-                  <span className="text-gray-400">/month</span>
+                  <span className="text-gray-400">/месяц</span>
                 </div>
                 <p className="text-gray-400 mb-6">
-                  {isAnnual ? 'Billed annually' : 'Billed monthly'}
+                  {isAnnual ? 'При годовой оплате' : 'При ежемесячной оплате'}
                 </p>
                 
                 <Button 

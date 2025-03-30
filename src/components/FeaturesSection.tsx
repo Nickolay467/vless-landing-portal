@@ -4,43 +4,43 @@ import { Shield, Zap, Globe, Lock, Server, Smartphone, Wifi, Clock } from "lucid
 const features = [
   {
     icon: <Shield className="h-6 w-6 text-vless-purple" />,
-    title: "Military-grade Encryption",
-    description: "Protect your data with AES-256 encryption, the same standard used by security experts worldwide."
+    title: "Военный уровень шифрования",
+    description: "Защитите ваши данные с шифрованием AES-256, тем же стандартом, который используют эксперты по безопасности во всем мире."
   },
   {
-    icon: <Zap className="h-6 w-6 text-vless-cyan" />,
-    title: "Lightning Speed",
-    description: "Enjoy ultra-fast connections with our optimized VLESS protocol and 10Gbps server network."
+    icon: <Zap className="h-6 w-6 text-yellow-400" />,
+    title: "Молниеносная скорость",
+    description: "Наслаждайтесь сверхбыстрыми соединениями с нашим оптимизированным протоколом и серверной сетью 10 Гбит/с."
   },
   {
     icon: <Globe className="h-6 w-6 text-vless-pink" />,
-    title: "Global Server Network",
-    description: "Access content from anywhere with servers in over 30 countries around the world."
+    title: "Глобальная сеть серверов",
+    description: "Получите доступ к контенту из любой точки мира благодаря серверам в более чем 30 странах."
   },
   {
     icon: <Lock className="h-6 w-6 text-vless-purple" />,
-    title: "No-logs Policy",
-    description: "We never track, collect, or share your browsing data. Your privacy is guaranteed."
+    title: "Политика отсутствия логов",
+    description: "Мы никогда не отслеживаем, не собираем и не передаем ваши данные о просмотрах. Ваша конфиденциальность гарантирована."
   },
   {
     icon: <Server className="h-6 w-6 text-vless-cyan" />,
-    title: "Dedicated Servers",
-    description: "Get personal dedicated IP addresses with private servers for enhanced security."
+    title: "Выделенные серверы",
+    description: "Получите персональные выделенные IP-адреса с частными серверами для повышенной безопасности."
   },
   {
     icon: <Smartphone className="h-6 w-6 text-vless-pink" />,
-    title: "Multi-device Support",
-    description: "Connect all your devices simultaneously with support for Windows, Mac, iOS, Android, and Linux."
+    title: "Поддержка всех устройств",
+    description: "Подключайте все свои устройства одновременно с поддержкой Windows, Mac, iOS, Android и Linux."
   },
   {
     icon: <Wifi className="h-6 w-6 text-vless-purple" />,
-    title: "Anti-ISP Throttling",
-    description: "Bypass ISP bandwidth throttling for consistent streaming and download speeds."
+    title: "Обход ограничений провайдера",
+    description: "Обходите ограничения интернет-провайдера для стабильной скорости потоковой передачи и загрузки."
   },
   {
     icon: <Clock className="h-6 w-6 text-vless-cyan" />,
-    title: "24/7 Support",
-    description: "Get help anytime with our round-the-clock customer support team."
+    title: "Поддержка 24/7",
+    description: "Получайте помощь в любое время благодаря нашей круглосуточной службе поддержки клиентов."
   }
 ];
 
@@ -51,10 +51,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Advanced <span className="text-gradient">Features</span> for Ultimate Protection
+            Продвинутые <span className="text-gradient">функции</span> для полной защиты
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            Our VLESS VPN offers cutting-edge security features with uncompromising performance, allowing you to browse, stream, and work with complete confidence.
+            Наш VPN предлагает передовые функции безопасности без ущерба для производительности, позволяя вам просматривать, стримить и работать с полной уверенностью.
           </p>
         </div>
         

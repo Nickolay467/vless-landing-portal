@@ -3,39 +3,39 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 
 const testimonials = [
   {
-    name: "Alex Johnson",
-    role: "Software Engineer",
-    company: "TechCorp",
+    name: "Алексей Иванов",
+    role: "Программист",
+    company: "ТехКорп",
     avatar: "/placeholder.svg",
-    content: "I've tried many VPN services, but VLESS stands out with its incredible speed. I can stream 4K content without any buffering issues."
+    content: "Я пробовал множество VPN сервисов, но HurikyNetwork выделяется своей невероятной скоростью. Я могу смотреть контент в 4K без каких-либо проблем с буферизацией."
   },
   {
-    name: "Sarah Williams",
-    role: "Digital Nomad",
-    company: "Remote Life",
+    name: "Светлана Петрова",
+    role: "Цифровой кочевник",
+    company: "Удаленная работа",
     avatar: "/placeholder.svg",
-    content: "As someone who works from coffee shops around the world, online security is crucial. VLESS gives me peace of mind with their military-grade encryption."
+    content: "Как человек, который работает из кафе по всему миру, онлайн-безопасность имеет решающее значение. HurikyNetwork дает мне душевное спокойствие благодаря шифрованию военного уровня."
   },
   {
-    name: "Michael Chen",
-    role: "Security Analyst",
-    company: "CyberDefense",
+    name: "Михаил Чен",
+    role: "Аналитик безопасности",
+    company: "КиберЗащита",
     avatar: "/placeholder.svg",
-    content: "From a professional standpoint, VLESS implements all the security protocols I recommend to clients. Their no-logs policy is genuine and their encryption is top-tier."
+    content: "С профессиональной точки зрения, HurikyNetwork реализует все протоколы безопасности, которые я рекомендую клиентам. Их политика отсутствия логов подлинная, а шифрование высшего уровня."
   },
   {
-    name: "Elena Rodriguez",
-    role: "Content Creator",
-    company: "StreamLife",
+    name: "Елена Родригес",
+    role: "Контент-криэйтор",
+    company: "СтримЛайф",
     avatar: "/placeholder.svg",
-    content: "I need consistent access to content from different regions for my work. VLESS has servers everywhere I need, and they're always fast and reliable."
+    content: "Мне нужен стабильный доступ к контенту из разных регионов для моей работы. HurikyNetwork имеет серверы везде, где мне нужно, и они всегда быстрые и надежные."
   },
   {
-    name: "David Kim",
-    role: "IT Manager",
-    company: "Global Enterprises",
+    name: "Дмитрий Ким",
+    role: "ИТ-менеджер",
+    company: "Глобал Энтерпрайзес",
     avatar: "/placeholder.svg",
-    content: "Implementing VLESS across our company has improved our security posture significantly. The team management features are excellent for our distributed workforce."
+    content: "Внедрение HurikyNetwork во всей нашей компании значительно улучшило нашу безопасность. Функции управления командой отлично подходят для нашей распределенной рабочей силы."
   }
 ];
 
@@ -45,10 +45,10 @@ const TestimonialSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Trusted by <span className="text-gradient">Thousands</span> Worldwide
+            Нам доверяют <span className="text-gradient">тысячи</span> пользователей
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            See what our customers are saying about their experience with our VLESS VPN service.
+            Узнайте, что говорят наши клиенты о своем опыте использования HurikyNetwork VPN.
           </p>
         </div>
         
